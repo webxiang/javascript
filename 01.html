@@ -11,14 +11,22 @@
             body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
             ol,ul,li{margin:0;padding:0;list-style:none;}
             img{border:none;}
-        
+            #wrap{
+                width: 200px;
+                height: 200px;
+                background:pink;
+                border-radius:50px;
+            }
         </style>
     </head>
     <body>
         <div id="wrap"></div>
         
         <script>
-            
+            let wr = document.getElementById("wrap");
+                wr.onclick = function(){
+                wr.innerHTML = "向嘉欣";
+            }
         </script>
     </body>
 </html>
